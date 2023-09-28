@@ -1,4 +1,4 @@
-package gruppuppift;
+package com.example.demo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -90,6 +90,17 @@ public class CarTest {
     void CarTest_EngineOffAllLightsOff(){
         car.getLight().allLightsOn();
         car.stopEngine();
+        assertFalse(car.getLight().getFrontLightStatus());
+        assertFalse(car.getLight().getBackLightStatus());
+    }
+    @Test
+    void CarTest_setFrontLightMode(){
+        assertNotNull(car.getLight().getFrontLightMode());
+    }
+
+    @Test
+    void CarTest_AllLightsOff(){
+        car.getLight().allLightsOff();
         assertFalse(car.getLight().getFrontLightStatus());
         assertFalse(car.getLight().getBackLightStatus());
     }

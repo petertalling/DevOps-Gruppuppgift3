@@ -1,4 +1,4 @@
-package gruppuppift;
+package com.example.demo;
 
 public class Light {
     private boolean frontLightStatus;
