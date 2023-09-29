@@ -50,9 +50,9 @@ public class CarTest {
 
     @Test
     void CarTest_LightModeHalf() {
-        car.getLight().switchLightMode();
-        car.getLight().switchLightMode();
-        assertEquals(car.getLight().getFrontLightMode(), "HALF");
+            car.getLight().switchLightMode();
+            car.getLight().switchLightMode();
+            assertEquals(car.getLight().getFrontLightMode(), "HALF");
     }
 
     @Test
